@@ -1,0 +1,16 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "Starter project for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "gitinit": "git init"
+  },
+  "keywords": [
+    "React",
+    "Start"
+  ],
+  "author": "Adu Williams",
+  "license": "MIT"
+}

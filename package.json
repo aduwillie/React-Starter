@@ -5,12 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "gitinit": "git init"
+    "gitinit": "git init",
+    "build": "rimraf ./dist && webpack",
+    "dev": "rimraf ./dist && webpack --watch"
   },
   "keywords": [
     "React",
     "Start"
   ],
   "author": "Adu Williams",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.28",
+    "@types/react-dom": "^15.5.0",
+    "rimraf": "^2.6.1",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "typescript-loader": "^1.1.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 }

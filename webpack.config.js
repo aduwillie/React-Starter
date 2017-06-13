@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.tsx',
@@ -13,5 +14,10 @@ module.exports = {
         rules: [
             { test: /\.(tsx?)/, use: ['ts-loader'] }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: false
+        })
+    ]
 }
